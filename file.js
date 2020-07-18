@@ -22,9 +22,8 @@ class Canvas{
         }
         else if (obj.type == "text"){
             this.ctx.font = obj.font + ' ' + obj.fontSize + 'px';
-            this.ctx.text(obj.text,obj.x,obj.y);
             this.ctx.fillStyle = obj.color;
-            this.ctx.fill();
+        this.ctx.fillText(obj.text,obj.x,obj.y);
         }
         this.ctx.closePath();
     }
@@ -46,8 +45,9 @@ class Circle{
     }
 }
 class Text{
-    constructor(text, x , y , color ,font = "Arial", fontSize = 10){
+    constructor(text, x , y , color = "black" ,font = "Arial", fontSize = 10){
         this.type = "text";
+        this.text = text;
         this.x = x;
         this.y = y;
         this.color = color;
