@@ -54,13 +54,22 @@ class Text{
         this.font = font;
         this.fontSize = fontSize;
     }
+    move(offsetX,offsetY){
+            this.x += offsetX;
+            this.y += offsetY;
+    }
 }
 class Rect{
     constructor(x, y, width, height, color){
+        this.type = "rect";
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
         this.color = color;
+    }
+    move(offsetX,offsetY){
+            this.x += offsetX;
+            this.y += offsetY;
     }
 }
