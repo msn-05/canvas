@@ -1,6 +1,11 @@
 class Canvas{
     constructor(width = window.innerWidth,height = window.innerHeight){
         this.canvas = document.createElement("canvas");
+        this.canvas.style.border = "1px solid black";
+        this.canvas.style.position = "relative";
+        this.canvas.style.top = "50%";
+        this.canvas.style.left = "50%";
+        this.canvas.style.transform = "translate(-50%,-50%)";
         this.ctx = this.canvas.getContext("2d");
         this.canvas.width = width;
         this.canvas.height = height;
