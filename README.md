@@ -1,4 +1,4 @@
-Canvas
+#Canvas
 
 Use this framework to draw 2D stuff.
 
@@ -7,4 +7,4 @@ Then you should see a bouncing ball!
 
 To use canvas just download it from here and use script tag to link to the file
 Or use CDN.
-<script src = "https://cdn.jsdelivr.net/gh/nuheen123/canvas@1.0/canvas.js" ></script>
+`<script src="https://cdn.jsdelivr.net/gh/nuheen123/canvas@1.0/canvas.js" ></script>`
