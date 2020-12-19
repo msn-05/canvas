@@ -2,7 +2,7 @@ window.onload = function(){
     var c = new Canvas();
     //Create a new canvas with default width and height. the canvas will be added to the body element
     var ball = new Circle(50,50,10,'green');
-    //params x,y,radius,color
+    //params: x,y,radius,color
     var dx = 2,dy = 2;
     //move speed
     window.setInterval(function(){
